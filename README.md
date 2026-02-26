@@ -3,7 +3,7 @@ The objective of the PalindromeChecker App is to design and implement a console-
 UC1: Application Entry & Welcome Message
 Goal: Display a welcome message in the code using java
 Actor: HarshithKassetty
-Key Concepts used in UC1:
+Key Concepts used in UC2:
 Class – Acts as a container for the Palindrome Checker application logic.
 Main Method – Entry point of the Java application with the signature
 public static void main(String[] args).
