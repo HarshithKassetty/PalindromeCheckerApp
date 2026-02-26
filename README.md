@@ -3,10 +3,9 @@ The objective of the PalindromeChecker App is to design and implement a console-
 UC1: Application Entry & Welcome Message
 Goal: Display a welcome message in the code using java
 Actor: HarshithKassetty
-Key Concepts used in UC2:
-Class – Acts as a container for the Palindrome Checker application logic.
-Main Method – Entry point of the Java application with the signature
-public static void main(String[] args).
-Static Keyword – Allows the JVM to invoke the main() method without creating an object.
-Console Output – System.out.println() is used to display messages on the console.
-Application Flow Control – Defines the startup behavior before palindrome processing begins.
+Key Concepts used in UC3:
+Loop (for loop) – Used to iterate through the characters of the string in reverse order.
+String Immutability – In Java, String objects are immutable; every modification creates a new String object.
+String Concatenation (+) – Used to build the reversed string character by character (introduced here to later discuss drawbacks).
+equals() Method – Used to compare the actual content of two String objects instead of memory references.
+Data Structure: String
