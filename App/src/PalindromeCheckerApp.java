@@ -1,60 +1,46 @@
+import java.util.Stack;
+
 /**
  * =========================================================
- * MAIN CLASS - UseCase4PalindromeCheckerApp
+ * MAIN CLASS - UseCase5PalindromeCheckerApp
  * =========================================================
  *
- * Use Case 4: Character Array Based Validation
+ * Use Case 5: Stack Based Palindrome Checker
  *
  * Description:
- * This class validates a palindrome by converting
- * the string into a character array and comparing
- * characters using the two-pointer technique.
+ * This class validates a palindrome using a Stack
+ * data structure which follows the LIFO principle.
  *
- * At this stage, the application:
- * - Converts string to char array
- * - Uses start and end pointers
- * - Compares characters efficiently
- * - Displays the result
- *
- * This reduces extra memory usage.
- *
- * @author Developer
- * @version 4.0
+ * @author HarshithKassetty
+ * @version 5.0
  */
 
 public class PalindromeCheckerApp {
 
     /**
-     * Application entry point for UC4.
+     * Application entry point for UC5.
      *
      * @param args Command-line arguments
      */
     public static void main(String[] args) {
-        // Declare and initialize the input string.
-        String input = "radar";
 
-        // Convert the string into a character array.
-        char[] chars = input.toCharArray();
 
-        // Initialize pointer at the beginning.
-        int start = 0;
+        String input = "noon";
 
-        // Initialize pointer at the end.
-        int end = chars.length - 1;
+        Stack<Character> stack = new Stack<>();
 
-        // Assume palindrome initially.
+        for (char c : input.toCharArray()) {
+            stack.push(c);
+        }
+
         boolean isPalindrome = true;
 
-        // Continue comparison until pointers cross.
-        while (start < end) {
+        for (char c : input.toCharArray()) {
 
-            if (chars[start] != chars[end]) {
+            if (c != stack.pop()) {
                 isPalindrome = false;
                 break;
             }
-
-            start++;
-            end--;
         }
 
         System.out.println("Input : " + input);
